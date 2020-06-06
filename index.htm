@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Каспаров - трон 101</title>
+    <style>
+        #game-board {
+            background-color: #723c07;
+            border: 1px solid #222;
+        }
+
+        #points {
+            box-sizing: content-box;
+            width: 500px;
+            text-align: center;
+            background-color: antiquewhite;
+            font-size: large;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+<canvas id="game-board" width="500" height="500">
+    Твоят браузър не поддържа canvas елемент :(
+</canvas>
+<div id='points'></div>
+
+<!-- configurations -->
+<script src="config/BoardConfig.js"></script>
+
+<!-- Managers -->
+<script src="managers/BoardManager.js"></script>
+
+<!-- Sprits and characters -->
+<script src="sprites/Figure.js"></script>
+<script src="sprites/Bishop.js"></script>
+<script src="sprites/King.js"></script>
+<script src="sprites/Knight.js"></script>
+<script src="sprites/Pawn.js"></script>
+<script src="sprites/Queen.js"></script>
+<script src="sprites/Rook.js"></script>
+
+<script src="application.js"></script>
+</body>
+</html>
